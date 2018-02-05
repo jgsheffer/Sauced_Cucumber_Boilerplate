@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="0" tests="4" time="427.236636" name="Amazon create account page should have verification on all  the fields">
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation name" time="111.289667">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation email" time="98.969305">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation on password" time="115.383700">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation on confirm password" time="101.593964">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

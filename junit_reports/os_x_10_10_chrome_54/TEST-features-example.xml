@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="1" errors="0" skipped="0" tests="5" time="279.712697" name="Amazon create account page should have verification on all  the fields">
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation name" time="56.702020">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation email" time="52.137089">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation on password" time="53.110954">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Error validation on confirm password" time="60.003834">
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+<testcase classname="Amazon create account page should have verification on all  the fields" name="Failing test example" time="57.758800">
+  <failure message="failed Failing test example" type="failed">
+    <![CDATA[Scenario: Failing test example
+
+Then the "missing_confirm_password_error" on the Create Account Page should be visible and say "Type your name again"
+
+Message:
+]]>
+    <![CDATA[Expected: 'Type your name again' Actual: 'Type your password again'  (RuntimeError)
+./features/step_definitions/example_steps.rb:32:in `/^the "(.*)" on the (.*) should be visible and say "(.*)"$/'
+features/example.feature:53:in `Then the "missing_confirm_password_error" on the Create Account Page should be visible and say "Type your name again"']]>
+  </failure>
+  <system-out>
+    <![CDATA[]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>
