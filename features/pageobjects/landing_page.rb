@@ -3,7 +3,7 @@ require_relative "./common_page_object.rb"
 class LandingPage < CommonPageObject
 
   def product_catalog()
-    @browser.element(:id => "_58_login")
+    $driver.element(:id => "_58_login")
   end
 
   def navigate_to()

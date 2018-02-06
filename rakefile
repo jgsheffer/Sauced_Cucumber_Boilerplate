@@ -36,9 +36,9 @@ end
 
 multitask :test_sauce => [
     :windows_10_edge_14,
-    :windows_10_firefox_49,
-    :windows_7_ie_11,
-    :os_x_10_10_chrome_54
+    # :windows_10_firefox_49,
+    # :windows_7_ie_11,
+    # :os_x_10_10_chrome_54
     :os_x_10_11_safari_10
   ] do
     raise StandardError, "Tests failed!" unless @success

@@ -1,7 +1,7 @@
 class PageLoader
 
   def initialize(browser)
-    @browser = browser
+    $driver = browser
   end
 
     @@pages = {
@@ -13,6 +13,6 @@ class PageLoader
     class_file = @@pages[gherkin_page_name] 
     raise "No page data found for #{gherkin_page_name}" if class_file == nil
     require_relative("#{class_file}")
-    Kernel.const_get(gherkin_page_name.gsub(" ", "")).new(@browser)
+    Kernel.const_get(gherkin_page_name.gsub(" ", "")).new($driver)
   end
 end

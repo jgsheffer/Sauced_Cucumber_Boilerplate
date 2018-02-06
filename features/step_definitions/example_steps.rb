@@ -1,5 +1,5 @@
 Given /^I am on the site homepage$/ do
-	@browser.goto($HOME_URL)
+	$driver.goto($HOME_URL)
 end
 
 Given /^I navigate to the (.*)$/ do |page|

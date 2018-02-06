@@ -3,7 +3,7 @@ require_relative "./common_page_object.rb"
 class SignInPage < CommonPageObject
 
 		def register()
-			@browser.element(:id => "auth-create-account-link")
+			$driver.element(:id => "auth-create-account-link")
 		end
 
 

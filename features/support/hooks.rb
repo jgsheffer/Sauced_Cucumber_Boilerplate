@@ -17,13 +17,13 @@ Before do | scenario |
   client = Selenium::WebDriver::Remote::Http::Default.new
   client.timeout = 180
 
-  @browser = Watir::Browser.new(:remote, :url => url, :desired_capabilities => capabilities, :http_client => client)
-  $page_loader = PageLoader.new(@browser)
+  $driver = Watir::Browser.new(:remote, :url => url, :desired_capabilities => capabilities, :http_client => client)
+  $page_loader = PageLoader.new($driver)
 end
 
 # "after all"
 After do | scenario |
-  sessionid = @browser.driver.session_id
+  sessionid = $driver.driver.session_id
   jobname = "#{scenario.feature.name} - #{scenario.name}"
 
 
@@ -31,7 +31,7 @@ After do | scenario |
   if scenario.failed?
     "Scenario failed::: #{scenario.exception.message}"
   end
-  @browser.quit
+  $driver.quit
 
   if scenario.passed?
     SauceWhisk::Jobs.pass_job sessionid
